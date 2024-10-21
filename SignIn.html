@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyWish(SignIn)</title>
+    <link rel="stylesheet" href="SignIn.css">
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <a href="index.html">
+                <button class="login">Login</button>
+            </a>
+            <a href="SignIn.html">
+                <button class="sign-in">SignIn</button>
+            </a>
+        </div>
+        <form class="form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="Enter Your First Name" class="input2">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Enter Your Last Name" class="input2">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="birth">Date of Birth</label>
+                <input type="text" id="birth" placeholder="MM/DD/YYYY">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="email must @gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="username">Phone Number</label>
+                <input type="text" id="username" placeholder="Enter Your Phone number">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm Your Password">
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="agree">
+                <!-- <label for="agree" class="agree">I agree, and the data is correct</label> -->
+                <p class="agreee">Keep me signed in on this device</p>
+            </div>
+            <button type="button" class="sign-in-button" onclick="redirectToNextPage()">Submmit</button>
+        </form>
+    </div>
+    <script>
+        function redirectToNextPage() {
+
+            window.location.href = 'index.html';
+        }
+    </script>
+    </div>
+</body>
+</html>

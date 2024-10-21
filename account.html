@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyWish (Budget)</title>
+    <link rel="stylesheet" href="Account.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="ikon/icons8-account-64 (1).png" alt="Profile Picture" class="profile-pic">
+            <div class="profile-info">
+                <h2>Leonard Bertrand Avellino</h2>
+                <p>leonard.bertrand@gmail.com</p>
+            </div>
+        </div>
+        <div class="options">
+            <div class="option-item">
+                <span>Profile</span>
+                <img src="ikon/icons8-arrow-right-50.png" alt="Right Arrow">
+            </div>
+            <div class="option-item">
+                <span>Call Number</span>
+                <img src="ikon/icons8-arrow-right-50.png" alt="Right Arrow">
+            </div>
+            <div class="option-item">
+                <span>Privacy Policy</span>
+                <img src="ikon/icons8-arrow-right-50.png" alt="Right Arrow">
+            </div>
+            <div class="option-item">
+                <span>Bank Access</span>
+                <img src="ikon/icons8-arrow-right-50.png" alt="Right Arrow">
+            </div>
+        </div>
+        <div class="option2">
+            <div class="optionsItemNotif">
+                <span>Notifications</span>
+                <img src="ikon/icons8-arrow-right-50.png" alt="Right Arrow">
+            </div>
+        </div>
+        <div class="options3">
+            <div class="optionsItemClose" onclick="confirmDelete()">
+                <span>Delete Account</span>
+                <img src="ikon/icons8-arrow-right-50.png" alt="Right Arrow">
+            </div>
+            <a href="index.html" class="logout-link">
+                <div class="optionsItemClose">
+                    <span>Log Out</span>
+                    <img src="ikon/icons8-arrow-right-50.png" alt="Right Arrow">
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-item">
+            <a href="Home.html">
+                <img src="ikon/icons8-home-50 (4).png" alt="Home">
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="footer-item">
+            <a href="Month1.html">
+                <img src="ikon/icons8-report-50 (2).png" alt="Report">
+                <span>Report</span>
+            </a>
+        </div>
+        <div class="footer-item">
+            <a href="Budget.html">
+                <img src="ikon/icons8-budget-64 (2).png" alt="Budget">
+                <span>Budget</span>
+            </a>
+        </div>
+        <div class="footer-item active">
+            <a href="account.html">
+                <img src="ikon/icons8-account-64 (1).png" alt="Account">
+                <span>Account</span>
+            </a>
+        </div>
+    </div>
+    <script>
+        function navigateToPage(page) {
+            window.location.href = page;
+        }
+
+        function confirmDelete() {
+            const confirmed = confirm("Are you sure you want to delete your Account?");
+            if (confirmed) {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</body>
+</html>

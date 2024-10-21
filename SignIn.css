@@ -1,0 +1,196 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222222;
+    font-family: Arial, sans-serif;
+    color: #ff6600;
+}
+
+.container {
+    width: 100%;
+    max-width: 390px; 
+    padding: 20px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.buttons .login, .buttons .sign-in {
+    border: none;
+    padding: 7px 70px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.buttons .login {
+    background-color: transparent;
+    color: #ff6600;
+    border: 2px solid #ff6600;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.buttons .sign-in {
+    background-color: #ff6600;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 0px 20px 20px 0px;
+}
+
+/* Styles for the form */
+.form {
+    display: flex;
+    flex-direction: column;
+    color: #ff6600;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    flex: 1;
+    position: relative;
+    margin-left: 10px;
+}
+
+.form-group + .form-group {
+    margin-left: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ff6600;
+    font-size: 24px;
+}
+
+.form-group input, .form-group select {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    color: #838383;
+}
+
+.form-group .input2 {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    color: #838383;
+}
+
+.form-group input::placeholder {
+    color: #838383;
+}
+
+.form-group select {
+    background-color: transparent;
+    border-bottom: 2px solid #ff6600;
+}
+
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.sign-in-button {
+    padding: 10px;
+    background-color: #ff6600;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.agreee {
+    color: #838383;
+    font-size: 15px;
+}
+
+.sign-in-button:hover {
+    background-color: #e65c00;
+}
+
+/* Style for the dropdown menu */
+.custom-select select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    background-color: #272727;
+    color: #ff6600;
+    appearance: none;
+}
+
+/* Add a background arrow icon */
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-select::after {
+    content: '\25BC'; 
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #ff6600;
+}
+
+.custom-select select option {
+    color: #272727;
+    background-color: #ff6600;
+    padding: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+@media (max-width: 390px) {
+    .buttons .login, .buttons .sign-in {
+        padding: 10px 20px;
+        font-size: 24px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .sign-in-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group + .form-group {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('Font/Jost200ThinItalic.otf') format('');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyCustomFont2';
+    src: url('Font/ZenTokyoZoo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+}
+
+
+.logo {
+    margin-bottom: 5px;
+    margin-top: 90PX;
+    margin-left: 40PX;
+}
+
+.logo img {
+    width: 350px;
+    height: 250px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    /* margin-bottom: 20px; */
+    margin-top: 10PX;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family:sans-serif;
+    color: #cccccc;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.buttons .login, .buttons .sign-in {
+    border: none;
+    padding: 7px 70px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.buttons .login {
+    background-color: #ff6600;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.buttons .sign-in {
+    background-color: transparent;
+    color: #ff6600;
+    border: 2px solid #ff6600;
+    border-radius: 0px 20px 20px 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    margin-left:10PX;
+    margin-right: 50px;
+    width: 70%;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 28px;
+    color: #ff6600;
+    font-family: 'MyCustomFont2';
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    margin-right: 70PX;
+}
+
+.input-group input::placeholder {
+    color: #ccc;
+}
+
+.input-group input:focus {
+    border-bottom: 2px solid #ff6600;
+}
+
+
+.signup-link {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.signup-link a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+.login-button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 40PX;
+    gap: 10px; 
+}
+
+.login-btn {
+    background-color: #ff6600;
+    color: #fff;
+    border: 2px solid white;
+    padding: 15px 120px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.face-id-icon {
+    width: 40px; 
+    height: 40px; 
+    padding: 5px;
+    margin-left: 10px; 
+    border: 2px solid #ff6600; 
+    border-radius: 5px; 
+}
+

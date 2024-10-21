@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222222;
+    font-family: Arial, sans-serif;
+    color: #ff6600;
+}
+
+.container {
+    width: 100%;
+    max-width: 390px; 
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+
+.back-button {
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.gambar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.gambar img {
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-select select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    background-color: #272727;
+    color: #ff6600;
+    appearance: none;
+    font-size:20;
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* .custom-select::after {
+    content: '\25BC'; 
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #ff6600;
+} */
+
+.custom-select select option {
+    color: #272727;
+    background-color: #ff6600;
+    padding: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#otp {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    background-color: #272727;
+    color: #ff6600;
+}
+
+#submit-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #272727;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    color: #ff6600;
+    cursor: pointer;
+    font-size: 16px;
+}

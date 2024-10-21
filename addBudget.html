@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyWish (addBudget)</title>
+    <link rel="stylesheet" href="addBudget.css">
+    <script src="ValidasiBudget.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="Budget.html">
+                <div class="close-icon">
+                    <img src="ikon/icons8-close-50.png" alt="Close">
+                </div>
+            </a>
+            <div class="title">
+                <span>Increase Budget</span>
+            </div>
+        </div>
+
+        <div class="budget-input-container">
+            <div class="budget-input-header">
+                <img src="ikon/icons8-card-50.png" alt="Credit Card Icon">
+                <span>Nominal Budget</span>
+            </div>
+            <div class="budget-input">
+                <span>Rp</span>
+                <input type="number" id="nominalBudget" min="0" max="1000000000" value="0">
+            </div>
+        </div>
+
+        <div class="menu-container">
+            <div class="menu-item" id="categoryMenu">
+                <span id="selectedCategory">Investation</span>
+                <span class="arrow">&#9656;</span>
+                <div class="dropdown-content" id="categoryDropdown">
+                    <div class="dropdown-item" onclick="selectCategory('Fashion')">Fashion</div>
+                    <div class="dropdown-item" onclick="selectCategory('Travel')">Travel</div>
+                    <div class="dropdown-item" onclick="selectCategory('Food')">Food</div>
+                    <div class="dropdown-item" onclick="selectCategory('Health')">Health</div>
+                    <div class="dropdown-item" onclick="selectCategory('Etc')">Etc</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <span>Select Date</span>
+                <div class="date-picker">
+                    <input type="date" id="startDate" name="start-date">
+                    <span>to</span>
+                    <input type="date" id="endDate" name="end-date">
+                </div>
+            </div>
+        </div>
+        <div class="save-button-container">
+            <button class="save-button" onclick="saveBudget()">SAVE</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>

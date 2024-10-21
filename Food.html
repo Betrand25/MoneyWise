@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyWish (Food)</title>
+    <link rel="stylesheet" href="addBudget.css">
+    <script src="input.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="Budget.html">
+                <div class="close-icon">
+                    <img src="ikon/icons8-close-50.png" alt="Close">
+                </div>
+            </a>
+            <div class="title">
+                <span>Food</span>
+            </div>
+        </div>
+
+        <div class="budget-input-container">
+            <div class="budget-input-header">
+                <img src="ikon/icons8-card-50.png" alt="Credit Card Icon">
+                <span>Coast</span>
+            </div>
+            <div class="budget-input">
+                <span>Rp</span>
+                <input type="number" id="nominalBudget" min="0" max="1000000000" value="0" oninput="validateInputs()">
+            </div>
+        </div>
+
+        <div class="menu-container">
+            <div class="menu-item" id="categoryMenu" onclick="toggleCategoryDropdown()">
+                <span id="selectedCategory">Capital</span>
+                <span class="arrow">&#9656;</span>
+                <div class="dropdown-content" id="categoryDropdown">
+                    <div class="dropdown-item" onclick="selectCategory('Income')">Income</div>
+                    <div class="dropdown-item" onclick="selectCategory('Outcome')">Outcome</div>
+                </div>
+            </div>
+            <div class="menu-item" id="additionalOptions" style="display: none;">
+                <div class="dropdown-item" onclick="selectCategory('Basic Salary')">Basic Salary</div>
+                <div class="dropdown-item" onclick="selectCategory('Salary Benefit')">Salary Benefit</div>
+                <div class="dropdown-item" onclick="selectCategory('Entertainment')">Entertainment</div>
+            </div>
+            <div class="menu-item">
+                <span>Select Date</span>
+                <div class="date-picker">
+                    <input type="date" id="startDate" name="start-date" onchange="validateInputs()">
+                </div>
+            </div>
+        </div>
+        <div class="save-button-container">
+            <button class="save-button" id="saveButton" onclick="saveBudget()" disabled>SAVE</button>
+        </div>
+    </div>
+</body>
+</html>

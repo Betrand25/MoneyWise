@@ -1,0 +1,174 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'MyCustomFont', sans-serif;
+    background-color: #272727;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    width: 100%;
+    max-width: 430px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid #838383;
+}
+
+.close-icon {
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.close-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.title {
+    color: #FC7200;
+    font-size: 32px;
+    padding-bottom: 5px;
+}
+
+.budget-input-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.budget-input-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.budget-input-header img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.budget-input-header span {
+    color: white;
+    font-size: 18px;
+}
+
+.budget-input {
+    display: flex;
+    align-items: center;
+}
+
+.budget-input span {
+    color: #FC7200;
+    font-size: 48px;
+    margin-right: 10px;
+}
+
+.budget-input input {
+    width: 100%;
+    max-width: 300px;
+    padding: 5px;
+    font-size: 48px;
+    background-color: #272727;
+    border: none;
+    color: #575757;
+    outline: none;
+}
+
+.menu-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #181818;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-item span {
+    font-size: 18px;
+}
+
+.arrow {
+    font-size: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #181818;
+    min-width: 100%;
+    top: 50px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content .dropdown-item:hover {
+    background-color: #575757;
+}
+
+.show {
+    display: block;
+}
+
+.date-picker {
+    display: flex;
+    align-items: center;
+}
+
+.date-picker input[type="date"] {
+    background-color: #272727;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+
+.save-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.save-button {
+    padding: 15px 120px;
+    background-color: #181818;
+    color: #FC7200;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 210px;
+}
+
+.save-button:hover {
+    background-color: #575757;
+}

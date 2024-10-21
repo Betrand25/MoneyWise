@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyWish(MasukKelas)</title>
+    <link rel="stylesheet" href="MasukApps.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="Foto/LogoMoneyWish.png" alt="Money Wish Logo">
+        </div>
+        <h1>Hello, Good Afternoon</h1>
+        <div class="buttons">
+            <a href="MasukApps.html">
+                <button class="login">Login</button>
+            </a>
+            <a href="SignIn.html">
+                <button class="sign-in">Sign In</button>
+            </a>
+        </div>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">User Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter Your User Name" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+            </div>
+            <div class="signup-link">
+                <span>Don't have an account? </span><a href="SignIn.html">Sign Up</a>
+            </div>
+            <div class="login-button-group">
+                <button type="submit" class="login-btn">Login</button>
+                <img src="Foto/Untitled_Artwork__4_-removebg-preview.png" alt="Face ID" class="face-id-icon">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = 'verifikasi.html'; 
+        });
+    </script>
+</body>
+</html>

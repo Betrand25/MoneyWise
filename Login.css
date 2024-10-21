@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #272727;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.stack {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+@media screen and (max-width: 430px) {
+    .stack {
+        width: 100px;
+        height: 90px;
+    }
+
+    .icon img {
+        width: 380px;
+        height: 380px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}

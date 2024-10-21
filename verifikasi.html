@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyWish(Verifikasi)</title>
+    <link rel="stylesheet" href="verifikasi.css">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="back-button"> Back</a>
+    </div>
+    <div class="gambar">
+        <img src="Foto/bank.png" alt="Payment Concept">
+    </div>
+    <div class="container">
+        <div class="form-group">
+            <div class="custom-select" style="width:100%;">
+                <h1>The security of your account is our priority</h1>
+                <label for="wallet">Choose Your Wallet</label>
+                <select id="wallet">
+                    <option value="0">Choose Your Bank</option>
+                    <option value="BCA" data-icon="bca.png">BCA</option>
+                    <option value="Danamon" data-icon="danamon.png">Danamon</option>
+                    <option value="Mandiri" data-icon="mandiri.png">Mandiri</option>
+                    <option value="BNI" data-icon="bni.png">BNI</option>
+                    <option value="CIMB" data-icon="cimb.png">CIMB</option>
+                    <option value="Add Manual" data-icon="">Add Manual</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group" id="otp-group" style="display: none;">
+            <label for="otp">Enter OTP</label>
+            <input type="text" id="otp" name="otp" placeholder="Enter OTP here">
+        </div>
+        <button id="submit-btn" disabled>Submit</button>
+    </div>
+    <script>
+        document.getElementById('wallet').addEventListener('change', function() {
+            const selectedValue = this.value;
+            const otpGroup = document.getElementById('otp-group');
+            const submitBtn = document.getElementById('submit-btn');
+            if (selectedValue !== "0") {
+                otpGroup.style.display = 'block';
+                submitBtn.disabled = false;
+            } else {
+                otpGroup.style.display = 'none';
+                submitBtn.disabled = true;
+            }
+        });
+
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            const walletValue = document.getElementById('wallet').value;
+            const otpValue = document.getElementById('otp').value;
+            if (walletValue !== "0" && otpValue) {
+                window.location.href = "Home.html";
+            } else {
+                alert("Please choose a bank and enter OTP.");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyWish (Month1)</title>
+    <link rel="stylesheet" href="Month1.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Month1Ex.js" defer></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Graph2.js" defer></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <a href="Home.html">
+                <img src="ikon/icons8-back-50.png" alt="Back Icon" class="back-icon">
+            </a>
+        </div>
+        <div class="button-group">
+            <button class="time-button active " onclick="navigateToPage('Day1.html')">Day</button>
+            <button class="time-button" onclick="navigateToPage('Week1.html')">Week</button>
+            <button class="time-button2" onclick="navigateToPage('Month1.html')">Month</button>
+        </div>
+        <div class="summary">
+            <div class="summary-item">
+                <span class="label">Total Income</span>
+                <span class="value income">Rp 7.500.000</span>
+            </div>
+            <div class="summary-item">
+                <span class="label">Total Expense</span>
+                <span class="value expense">Rp 6.100.000</span>
+            </div>
+            <div class="summary-item">
+                <span class="label">Difference</span>
+                <span class="value difference">Rp 1.400.000</span>
+            </div>
+        </div>
+        <div class="tab-container">
+            <a href="Month1.html">
+                <div class="tab-item active">
+                    <span class="tab-label">Expense</span>
+                </div>
+            </a>
+            <a href="Month1Inc.html">
+                <div class="tab-item">
+                    <span class="tab-label">Income</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="background-box">
+            <div class="chart-container">
+                <canvas id="spendingChart"></canvas>
+            </div>
+            <div id="custom-legend"></div>
+            <div class="weekly-totals">
+                <div class="weekly-total">2.400.000</div>
+                <div class="weekly-total">1.900.000</div>
+                <div class="weekly-total">1.100.000</div>
+                <div class="weekly-total">700.000</div>
+            </div>
+        </div>
+        <div class="title">
+            <h1>Ctaegory</h1>
+        </div>
+        <div class="rec2">
+            <div class="rec2-header">
+                <span class="limit-label">Total</span>
+                <span class="limit-amount">March</span>
+            </div>
+            <div class="rec3-header">
+                <span class="limit-label">Rp 6.100.000</span>
+            </div>
+            <div class="chart-container">
+                <canvas id="spendingChart2"></canvas>
+            </div>
+            <div id="custom-legend2"></div>
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        <div class="footer-item">
+            <a href="Home.html">
+                <img src="ikon/icons8-home-50 (4).png" alt="Home">
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="footer-item active">
+            <a href="Month1.html">
+                <img src="ikon/icons8-report-50 (3).png" alt="Report">
+                <span>Report</span>
+            </a>
+        </div>
+        <div class="footer-item">
+            <a href="Budget.html">
+                <img src="ikon/icons8-budget-64 (2).png" alt="Budget">
+                <span>Budget</span>
+            </a>
+        </div>
+        <div class="footer-item">
+            <a href="account.html">
+                <img src="ikon/icons8-account-64 (2).png" alt="Account">
+                <span>Account</span>
+            </a>
+        </div>
+        <script>
+            function navigateToPage(page) {
+                window.location.href = page;
+            }
+        </script>
+</body>
+</html>
